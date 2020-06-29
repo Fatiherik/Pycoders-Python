@@ -1,0 +1,4 @@
+data = "There Are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some Form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a Passage of Lorem Ipsum, you Need to be sure there isn't anything embarrassing Hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model Sentence structures, to Generate Lorem Ipsum which looKs reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc."
+data=data.upper()
+word_occurrences={i:data.count(i) for i in data if i.isalpha()==True}
+print(str(word_occurrences).replace(', ',',\n '))
